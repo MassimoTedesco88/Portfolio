@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PC & Network - My Portfolio</title>
+		<link rel="stylesheet" href="/home/martinp/Documenti/SitoPortfolio/stylesPortfolio.css">
+	</head>
+<body>
+	<header>
+		<div class="logo">PC & Network - My Portfolio</div>
+		<nav class="nav">
+			<a href="#">myGitHub</a>
+			<a href="#">myLinkedIn</a>
+		</nav>
+	</header>
+	<section class="section intro">
+		<h1>Aspiring IT Technician</h1>
+		<p>Hi, I'm Massimo Sedda, a self-taught IT professional based in Landsberg am Lech - Germany, with a background in accounting and programming.</p>
+		<p>In 2024-2025, I decided to pursue a new career path in IT support, networking, and cybersecurity.</p>
+		<p>I'm currently studying for CompTIA certifications, and building personal projects to gain real skills in Linux systems, networking, and security.</p>
+	</section>
+	<section class="section resume">
+		<div>
+			<h3>Education</h3>
+			<p><i>High School Diploma, Computer Programming/Programmer and Business Administration</i><span class="little"> - Italy (2002-2007)</span></p>
+			<h3>Certifications</h3>
+			<ul>
+				<li>CompTIA A+ (in progress)</li>
+				<li>CompTIA Network+ (planned)</li>
+			</ul>
+			<h3>Experience</h3>
+			<ul>
+				<li><i>Self-study projects, after work (1 year)</i></li>
+				<li><i>Internal Customer Service</i> <span class="little">- Bardusch - Germany (02/2023 - Present)</span></li>
+				<li><i>Ice cream shop Assistant Manager</i> <span class="little">- Carucci GbR/Eiscafe Cortina - Germany (02/2018 - 10/2022)</span></li>
+				<li><i>Bartender and waiter</i> <span class="little">- Carucci GbR/Eiscafe Cortina - Germany (06/2014 - 10/2022)</span></li>
+				<li><i>Administrative Assistant</i> <span class="little">- FC Glass & C.Srl - Italy (11/2008 - 05/2014)</span></li>					
+			</ul>
+			<h3>Languages</h3>
+			<ul>
+				<li><i>German</i> - B1 Certified</li>
+				<li><i>English</i> - B1 (developing)</li>
+				<li><i>Italian</i> - Native </li>			
+			</ul>				
+		</div>
+		<div>
+			<h3>System</h3>
+				<ul><li>Linux (Ubuntu, Debian), Windows</li></ul>			
+			<h3>Networking</h3>
+				<ul><li>TCP/IP, DHCP, DNS, Subnetting</li></ul>			
+			<h3>Security></h3>
+				<ul><li>Basic log analysis, firewall basics</li></ul>			
+			<h3>Tools</h3>
+				<ul><li>Git, Bash, Python, VirtualBox</li></ul>			
+			<h3>Studying</h3>
+				<ul><li>CompTIA A+, Network+, Linux</li></ul>
+		</div>
+	</section>
+	<section class="section projects">
+		<h2>Projects</h2>
+		<div class="project-grid">
+			<div class="project-card-L project-large">
+				<h3>CompTIA A+ Study Notes Website</h3>
+					<p><i>Personal Project | Ongoing (2025)</i></p>
+					<p><i>HTML, CSS, Word, Technical Writing</i></p>
+					<p>To support my preparation for the CompTIA A+ certification, I created a personal study website built from my own hadwritten and transcribed notes. The project includes:</p>
+					<ul>
+						<li>A clean and simple static website with 25 individual pages, each corresponding to a chapter of the ComptiaA+.</li>
+						<li>Content based on carefully curated and rewritten notes originally taken in Microsoft Word.</li>
+						<li>Focus on clear structure, readability, and efficient navigation between chapters.</li>
+						<li>Covers core A+ domains: hardware, networking, mobile devices, operating systems, security, troubleshooting, and more.</li>
+					</ul>
+					<p>This project not only helped me internalize the study material, but also served as an exercise in technical communication and basic web development.</p>
+		
+					<a href="ComptiaA/index.html">View Project >>> </a><br><hr><br>
+					
+				<h3>Python Tool to detect Suspicious Processes</h3>
+					<p><i>Personal Project | 01.06.2025</i></p>
+					<p><i>Python</i></p>
+					<p>A Python-based system diagnostic and security tool that scans all active processes on a local machine, computes the SHA-256 hash of each executable, and checks it against a live malware hash feed from Abuse.ch.</p>
+					<p>The program extracts system hardware information (CPU,RAM), logs top resource-consuming processes, and saves all results to CSV and log files in the user's Documents folder.</p>
+					<p>It implements threat comparison logic with a local hash database, automatically updated monthly, ensuring fast and offline-ready performance. Built using psutil and hashlib, the tool demonstrates secure file handling, process introspection, and real-world integration of open threat intelligence - without requiring any user registration or third-party API keys.</p>
+					<p class="red"><b>Note: The code in this project was written with the help of ChatGPT.</b></p>		
+					<a href="#">View Project >>> </a>
+			</div>
+			<div class="project-card-L project-large">
+				<h3>Automated Stock Analysis Tool</h3>
+					<p><i>Personal Project | Feb 2025 – Apr 2025 (Evenings & Weekends)</i></p>
+					<p><i>Python, Financial Modeling Prep API, HTML, CSV</i></p>		
+					<p>I developed a Python-based stock analysus program that leverages the Financial Modeling Prep API to analyze up to 250 tickers per day (free API tier). </p>
+					<p>The tool performs the following key functions:</p>
+					<ul>
+						<li><b>Data Acquisition:</b> Automatically downloads historical prices and financial data for selected tickers.</li>
+						<li><b>Analysis & Indicators:</b>
+							<ul>
+								<li>Calculates technical, fundamental, and sentiment indicators.</li>
+								<li>Benchmarks each asset against global market conditions.</li>
+								<li>Detects the current market phase (e.g., accumulation, distribution).</li>
+								<li>Estimates investment horizon and automatically sets entry price, take profit, and stop loss levels.</li>
+								<li>Assesses risk and investment attractiveness.</li>
+								<li>Provides commentary in Italian on detected signals and suggests buying opportunities for short, medium, or long-term strategies.</li>
+							</ul>
+						</li>
+						<li><b>Reporting & Strategy:</b>
+							<ul>
+								<li>Generates interactive HTML reports and CSV files for each analysis.</li>
+								<li>Clickable links open detailed reports for each analyzed ticker.</li>
+								<li>Ranks and lists the top investment candidates using two custom strategies based on defined indicators and performance thresholds.</li>
+							</ul>
+						</li>
+					</ul>  
+					<br>
+					<p class="red"><b>This project was developed using Python with the support of AI tools such as ChatGPT to assist in coding. I focused on designing the system, defining its logic, and integrating the various components while learning through the development process.</b></p>
+					<p><b>Current Status & Future Plans:</b></p>
+					<p>The project is currently on hold as I focus on studying for the CompTIA A+ certification.</p>
+					<p>Planned future improvements include:</p>
+					<ul>
+						<li>Adding English-language signal outputs.</li>
+						<li>Implementing a new backtesting module featuring maximum drawdown, win rate, and loss rate calculations.</li>
+						<li>Developing a web platform that automatically publishes all HTML reports online.</li>
+						<li>Integrating a user login system, where only registered users can access the reports.</li>
+					</ul>				
+					<a href="Finance/index.html">View Project >>> </a>
+			</div>
+			<div class="project-card">
+				<h3>Log File Analyzer</h3>
+				<p> Reads .log files and finds failed login attemps.</p>
+				<a href="#">View Project >>> </a>
+			</div>
+			<div class="project-card">
+				<h3>Network Scanner</h3>
+				<p> Finds connected MAC addresses on home network.</p>
+				<a href="#">View Project >>> </a>
+			</div>
+			<div class="project-card">
+				<h3>System Info Tool</h3>
+				<p> Displays hardware and OS details of your PC.</p>
+				<a href="#">View Project >>> </a>
+			</div>
+		</div>
+		<div class="small-projects">
+				<div class="small-project-card">
+					<h4>Ping Monitor</h4>
+						<a href="#"><p>Basic ping tool with alert system.</p></a>
+				</div>
+				<div class="small-project-card">
+					<h4>Firewall Rule Script</h4>
+						<a href="#"><p>iptables-based basic firewall configuration.</p></a>
+				</div>
+				<div class="small-project-card">
+					<h4>Port Scanner</h4>
+						<a href="#"><p>Scan open ports on local IP range.</p></a>
+				</div>
+				<div class="small-project-card">
+					<h4>Ping Monitor</h4>
+						<a href="#"><p>Basic ping tool with alert system.</p></a>
+				</div>
+				<div class="small-project-card">
+					<h4>Firewall Rule Script</h4>
+						<a href="#"><p>iptables-based basic firewall configuration.</p></a>
+				</div>
+				<div class="small-project-card">
+					<h4>Port Scanner</h4>
+						<a href="#"><p>Scan open ports on local IP range.</p></a>
+				</div>
+		</div>
+		
+	</section>
+		<footer>
+			&copy; PC & Network - My Portfolio 2025   |   Massimo Sedda
+		</footer>		
+	</body>
+</html>

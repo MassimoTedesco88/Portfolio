@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Network Scanner & Connection Analyzer</title>
+		<link rel="stylesheet" href="/home/martinp/Documenti/SitoPortfolio/stylesPortfolio.css">
+	</head>
+<body>
+	<header>
+		<div class="logo">PC & Network - My Portfolio</div>
+		<nav class="nav">
+			<a href="#">myGitHub</a>
+			<a href="#">myLinkedIn</a>
+		</nav>
+	</header>
+	<section class="section intro">
+		<h1>Network Scanner & Connection Analyzer</h1>
+		<p>This Python-based tool performs an in-depth scan of a local network by identifying connected devices, analyzing open ports, and mapping active network connections. It leverages the psutil library to retrieve real-time information about network sockets and associated system processes.</p>
+		<p><b>Note: The code in this project was written with the help of ChatGPT.</b></p>	
+		<a href="SitoPortfolio/indexPortfolio.html">**Torna Indietro**</a>
+	</section>	
+	<section class="section projects">
+		<div class="project-grid">
+			<div class="project-card-L project-large">
+				<h3>DA COMPLETARE SOLO IL CODICE COMMENTATO </h3>
+				<code>import psutil
+				<br>
+				for proc in psutil.process_iter(['pid','name','exe','create_time']):
+				<br>...
+				</code>
+				<p>This loop retrieves detailed information about each running process, such as its PID, name, executable path, and creation time. It forms the core of the system monitoring logic.</p>
+				<hr>
+				<h3>Calculating SHA-256 Hash of Executable</h3>
+				<code>import hashlib<br>
+				def calculate_sha256(filepath):
+				<br>
+				&emsp;&emsp;hash_sha256 = hashlib.sha256()<br>
+				&emsp;&emsp;with open(filepath, "rb") as f:<br>
+				&emsp;&emsp;&emsp;&emsp;while chunk := f.read(8192):<br>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;hash_sha256.update(chunk)<br>
+				&emsp;&emsp;return hash_sha256.hexdigest()
+				   
+				</code>
+				<p>Efficiently reads binary data in chunks from the executable file and generates a unique SHA-256 fingerprint. This is crucial for identifying potentially malicious files.</p>
+				
+				
+				
+										
+			</div>
+			<div class="project-card-L project-large">
+    			<h3>Da completare</h3>
+				<code>from datetime import datetime<br>
+				start_time = datetime.fromtimestamp(proc.info['create_time'])
+				<br>...</code>
+				<p>Converts the Unix timestamp into a readable datetime format. Useful for understanding when the process began, which is relavant for forensic analysis.</p><hr>
+									
+			</div>
+			<div class="project-card">
+				<h3>Key Features</h3>
+				<ul>
+				    <li>Automatic detection of devices on the local subnet</li>
+				    <li>Detailed listing of active TCP/UDP connections with local and remote IPs and ports</li>
+				    <li>Identification of services/processes associated with each connection</li>
+				    <li>Recognition of ephemeral (temporary) ports to distinguish client-side connections</li>
+   				    <li>Basic security insights to hel indentify unusual or suspicious network activity</li>
+				</ul>				
+			</div>
+			<div class="project-card">
+				<h3>What I learned from this project</h3>
+				<ul>
+				    <li>Network fundamentals</li>
+				    <li>System and process monitoring</li>
+				    <li>Understood the concept of ephemeral ports and how to distinguish them from well-known service ports.</li>
+				    <li>Security basics</li>
+				</ul>
+				
+			</div>	
+			<div class="project-card">
+				<h3>View the full project on GitHub</h3>
+				<a href="SitoPortfolio/indexPortfolio.html">https\\ssssss</a>			
+			</div>			
+		</div>		
+		
+	</section>
+		<footer>
+			&copy; PC & Network - My Portfolio 2025   |   Massimo Sedda
+		</footer>		
+	</body>
+</html>
