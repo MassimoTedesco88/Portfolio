@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CompTIA A+ Study Notes Website</title>
+		<link rel="stylesheet" href="..\CSS\stylesCompTIAAplus.css">
+	</head>
+<body>
+	<header>
+		<div class="logo">CompTIA A+ Study Notes Website</div>
+		<nav class="nav">
+			<a href="indexCompTIAAplus.html">myIndex</a>
+			<a href="..\indexPortfolio.html">myPortfolio</a>
+			<a href="#">myGitHub</a>
+			<a href="#">myLinkedIn</a>
+		</nav>
+	</header>
+	<div class="argomenti nav2">			
+			<a href="indexCompTIAAplus.html">CPU</a>
+			<a href="ram.html">RAM</a>
+			<a href="firmware.html">Firmware</a>
+			<a href="motherboard.html">Motherboard</a>
+			<a href="psu.html">Power Supplies</a>
+			<a href="massStorage.html">Mass Storage Technologies</a>
+			<a href="massStorage2.html">Implementing Mass Storage</a>
+			<a href="essPeriph.html">Essential Peripherals</a>
+			<a href="upOS.html">Installing & Upgrading Operating Systems</a>
+			<a href="workOS.html">Working with Operating System</a>
+			<a href="permissions.html">User, Groups, & Permissions</a>
+			<a href="maintainOS.html">Maintaining & Optimizing Operating Systems</a>
+			<a href="commandLine.html">Working with the Command-line Interface</a>
+			<a href="troubleshootOS.html">Troubleshooting Operating Systems</a>
+			<a href="display.html">Display Technologies</a>
+			<a href="networking.html">Essentials of Networking</a>
+			<a href="LAN.html">Local Area Network</a>
+			<a href="wireless.html">Wireless Networking</a>
+			<a href="internet.html">The Internet</a>
+			<a href="virtualization.html">Virtualization</a>
+			<a href="portableComputing.html">Portable Computing</a>
+			<a href="mobile.html">Mobile Devices</a>
+			<a href="maintainMobile.html">Maintaing & Securing Mobile Devices</a>
+			<a href="printers.html">Printers & Multifunction Devices</a>
+			<a href="securingComputers.html">Securing Computers</a>
+			<a href="operationalProcedures.html">Operational Procedures</a>					
+	</div>
+	<h2 class="titolo-argomento">[ Firmware ]</h2>
+	<h2 class="sottotitolo-argomento">~ Central Process Unit ~</h2>
+	<section class="section projects">
+		
+		<div class="project-grid">
+			<div class="project-card-L project-large">
+				Definition: firmware is a specialized, low-level software permanently programmed into a hardware device’s non-volatile memory ( like ROM, EEPROM or flash memory). It acts as a bridge between a computer’s hardware and its higher-level software (like the operating system).
+Key characteristics:
+    • stored on the device itself
+    • non-volatile (retains data without power)
+    • usually upgradable (e.g. BIOS/UEFI updates)
+    • essential for hardware to function
+Types of firmware
+    • BIOS (Basic Input/Output System)
+        ◦ Legacy firmware stored in ROM or flash memory
+        ◦ Initializes hardware and performs POST (Power-On Self Test)
+        ◦ Uses text-based setup utility
+        ◦ Has limitations (e.g., no support for drives larger than 2.2TB)
+        ◦ Relies on MBR (Master Boot Record) for booting
+    • UEFI (Unified Extensible Firmware Interface)
+        ◦ Modern replacement for BIOS, with more advanced features:
+            ▪ support for drives over 2.2 TB (uses GPT instead of MBR)
+            ▪ mouse and GUI support
+            ▪ secure boot (prevent unauthorized OS / software from loading)
+            ▪ faster boot times
+        ◦ Stored in flash memory on the motherboard
+        ◦ Includes embedded diagnostics and recovery tools
+MBR and GPT are two different partitioning schemes used to define how data is organized on a storage device (like a hard drive or SSD)
+MBR (Master Boot Record)
+    • introduced:1983
+    • supports up to 4 primary partitions ( or 3 primary + 1 ext.)
+    • supports up to 2 TB of disk space
+    • stores bootloader in the first sector ( sector 0 ) of the disk
+    • supported by most BIOS-based system
+GPT (GUID Partition table)
+    • introduced: as part of the UEFI standard
+    • supports up to 128 primary partitions( in Windows)
+    • supports disks larger than 2TB
+    • stores multiple copies of the partition table for redundancy and uses CRC32 for integrity checking
+    • required for booting from disks on UEFI-based systems; not supported on older BIOS-only-systems without special configuration
+Key Firmware concept
+POST (Power-On Self-Test)
+    • run by the firmware to test essential components ( CPU, RAM, GPU, etc.)
+    • fails generate beep codes or error messages
+    • helps diagnose basic hardware issues before OS loads
+POST cards: a small expansion card that plugs into the motherboard; displays hexadecimal Post codes during the startup sequence; helps identify the specific stage at which the system fails; useful when no beep codes or video output is available.
+CMOS (Complementary Metal-Oxide-Semicondutor) 
+    • a battery -powered chip that stores system settings configured in BIOS/UEFI.
+    • Examples of CMOS-stores data:
+        ◦ Data and time
+        ◦ Boot device order
+        ◦ Enabled/disabled hardware
+    • CMOS battery keeps settings when system is powered off.
+    • If battery fails: settings reset to default.
+
+System Setup Utility (BIOS/UEFI Setup)
+    • accessed at boot ( common keys: DEL, F2, ESC, F10 )
+    • used to:
+        ◦ change boot order, enable/disable hardware, set system passwords, monitor temperatures and voltages, flash BIOS/UEFI updates.
+Firmware Updates (Flashing)
+    • Often done to fix bugs or add hardware support
+    • can be risky (wrong update many “brick” the motherboard)
+    • always use official update tools provided by motherboard manufacturer
+BIOS/UEFI security – related options
+    • Supervisor/Admin password: 
+        ◦ restricts access to the BIOS/UEFI setup utility;
+        ◦ prevents unauthorized changes to system configuration, boot order or overclocking system;
+        ◦ must be entered before making any BIOS-level changes.
+    • User/System password: 
+        ◦ required to boot the system;
+        ◦ acts as a pre-boot login, blocking access before the OS loads;
+        ◦ can be used with or without an Admin password.
+    • Drive Encryption/TPM(Trusted Platform Module):
+        ◦ TPM is a hardware chip that stores encryption keys securely.
+        ◦ Enables full-disk encryption using tools like Bitlocker (Windows).
+        ◦ BIOS must have TPM enabled for these features to work.
+        ◦ TPM can also store biometric or system authentication data.
+    • Secure Boot:
+        ◦ a UEFI feature that allows only digitally signed operating systems and bootloaders to run;
+        ◦ protects against rootkits and boot-level malware;
+        ◦ should be enabled for modern OS es like windows 10/11.
+    • LoJack / Computrace:
+        ◦ anti-theft technology embedded in BIOS firmware;
+        ◦ allows tracking, remote lock, or data wipe if a device is lost/stolen;
+        ◦ often used in enterprise laptops.
+    • BIOS Flash Protection:
+        ◦ prevents unauthorized updates (flashing) of BIOS/UEFI firmware;
+        ◦ Protects against malware that tries to modify firmware (e.g. to insert persisten threats);
+        ◦ May require Admin password or a jumper on the motherboard to override.
+    • Chassis Intrusion Detections:
+        ◦ some systems include a switch or sensor in the case.
+        ◦ BIOS can log or alert if the case has been opened.
+        ◦ Useful in security-sensitive environments.
+    • Boot Sector Protection / Virus warning
+        ◦ prevents programs from writing to the boot sector of the drive.
+        ◦ Stops some malware from installing persistent boot-level code.
+        ◦ May interfere with OS installations if not temporarily disabled.
+Boot options and USB permissions in BIOS/UEFI
+    • Boot Options (Boot Sequence / Boot Priority)
+        ◦ define the order of devices the system checks for a bootable OS during startup.
+        ◦ Common Boot Devices:
+            ▪ Hard Drive/SSD, USB Flash Drive, CD/DVD Drive, Network(PXE Boot), External Drive.
+        ◦ Why it’s important:
+            ▪ You may need to boot from a USB or CD to install an OS or run diagnostics.
+            ▪ Misconfigured boot order can prevent the system from starting properly.
+    • USB Permissions / USB Configuration in BIOS
+        ◦ control whether USB ports or USB boot devices are allowed during system startup.
+        ◦ Security-related options:
+            ▪ Enable/disable USB ports: block access to USB storage or peripherals to prevent data theft or malware.
+            ▪ Enable/Disable USB Boot: prevents booting from unauthorized USB devices.
+            ▪ USB Legacy Support: Allows USB devices to work with older Oses or boot enviroments.
+        ◦ Why it matters:
+            ▪ Disabling USB boot can prevent unauthorized users from booting into another OS or recovery environment.
+            ▪ Disabling ports may be used in secure environments to reduce attack vectors.
+The Boot Process: is the sequence of steps a computer follows from the moment it is powered on until the operating system is fully loaded and ready for use.
+Steps in the Boot Process:
+    1. Power On: the system receives power and begins hardware initialization.
+    2. Post (Power-On-Self-Test): firmware (BIOS/UEFI) tests critical hardware like RAM, CPU and keyboard; errors may be indicated by beep codes or messages.
+    3. BIOS/UEFI Configurations Load: Reads settings stored in CMOS (e.g., boot loader, data/time).
+    4. Bootstrap Loader Execution: located in BIOS/UEFI, it identifies the bootable device; loads the OS bootloader (like BOOTMGR or GRUB) into RAM.
+    5. Bootloader loads OS: the bootloader starts loading the operating system kernel from the selected device.
+    6. Operating System Starts: the OS takes control, loads drivers, and presents the login or desktop screen.
+Default/Optimized Settings:
+    • Default Settings: basic, stable configurations for all hardware.
+    • Optimized Defaults: pre-configured settings designed for best compatibility and performance.
+    • When to use:
+        ◦ after a failed overclock or BIOS error
+        ◦ when troubleshotting hardware
+        ◦ after clearing CMOS or replacing the motherboard
+Clearing CMOS
+    • Why clear CMOS?
+        ◦ Reset forgotten BIOS passwords;
+        ◦ fix boot or POST errors;
+        ◦ revert unstable BIOS settings.
+    • Almost every motherboard has a dedicated set of wires called CLRTC or similar
+    • How to clear it:
+        ◦ use CLEAR CMOS jumper on the motherboard
+        ◦ or remove CMOS battery for 5-10 minutes;
+        ◦ some boards have a Clear CMOS button;
+    • After clearing, BIOS will reset to factory defaults
+      
+Losing CMOS/RTC settings
+    • Causes:
+        ◦ dead CMOS battery (typically CR2032 coin cell)
+        ◦ manual clearing of CMOS
+        ◦ power surge or failure
+    • Symptoms:
+        ◦ wrong date/time at startup
+        ◦ boot device errors
+        ◦ lost BIOS passwords or settings
+    • Fix:
+        ◦ replace the CMOS battery
+        ◦ reconfigure BIOS setting
+Flashing the ROM (Updating BIOS/UEFI)
+    • flashing = writing a new version of firmware into the ROM chip (Firmware update)
+    • Why flash?
+        ◦ Fix bugs or vulnerabilities
+        ◦ Add support for new hardware (CPU,RAM,SSDs)
+        ◦ Improve stability or performance
+    • How to flash
+        ◦ download the correct BIOS from the manufacturer’s website
+        ◦ use build-in tools like:
+            ▪ EZ Flash, Q-Flash or M Flash
+            ▪ DOS or USB-based utilities
+    • Never interrupt power during flashing!
+    • Risks:
+        ◦ flashing the wrong version can brick the motherboard
+        ◦ interruptions (like power loss) may leave BIOS unusable
+			</div>
+			<div class="project-card-L project-large">
+				
+				
+			
+				
+				
+			</div>
+			
+		</div>
+		<div class="small-projects">
+				<div class="small-project-card">
+					<h4>CPU</h4>
+						<p>Central Processing Unit</p>
+				</div>
+				<div class="small-project-card">
+					<h4>EDB</h4>
+						<p>External Data Bus</p>
+				</div>
+				<div class="small-project-card">
+					<h4>MCC</h4>
+						<p>Memory Controller Chip</p>
+				</div>
+				<div class="small-project-card">
+					<h4>TDP</h4>
+						<p>Thermal Design Power</p>
+				</div>
+				<div class="small-project-card">
+					<h4>IMC</h4>
+						<p>Integrated Memory Controller</p>
+				</div>
+				<div class="small-project-card">
+					<h4>GPU</h4>
+						<p>Graphics Processing Unit</p>
+				</div>
+		</div>
+		
+	</section>
+		<footer>
+			&copy; PC & Network - My Portfolio 2025   |   Massimo Sedda
+		</footer>		
+	</body>
+</html>

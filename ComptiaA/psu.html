@@ -13,7 +13,7 @@
 			<a href="indexCompTIAAplus.html">myIndex</a>
 			<a href="..\indexPortfolio.html">myPortfolio</a>
 			<a href="#">myGitHub</a>
-			<a href="https://de.linkedin.com/in/massimo-sedda-173416135?trk=people-guest_people_search-card">myLinkedIn</a>
+			<a href="#">myLinkedIn</a>
 		</nav>
 	</header>
 	<div class="argomenti nav2">			
@@ -44,7 +44,7 @@
 			<a href="securingComputers.html">Securing Computers</a>
 			<a href="operationalProcedures.html">Operational Procedures</a>					
 	</div>
-	<h2 class="titolo-argomento">[ CPU ]</h2>
+	<h2 class="titolo-argomento">[ Power Supplies ]</h2>
 	<h2 class="sottotitolo-argomento">~ Central Process Unit ~</h2>
 	<section class="section projects">
 		
@@ -141,6 +141,10 @@ The four most common: general-purpose registers (AX, BX, CX, DX)</p>
 				<p><i>x64:</i> 64-bit extension of x86.</p>
 				<p><i>X86-64:</i>technical term for x64.</p>
 				<p><b>Virtualization Support:</b> enables a CPU to run multiple operating systems simultaneously using virtual machines.</p>	
+				
+			</div>
+			<div class="project-card-L project-large">
+				
 				<p><b>Parallel Execution:</b> refers to the ability of a CPU to execute multiple instructions or tasks at the same time, rather  than one after another.</p>
 				<p><i>Pipeling:</i> is a technique where the CPU breaks down instruction execution into separate <i>stages</i>, allowing multiple instructions to be processed simultaneously – one in each stage.</p>
 				<p>This boosts instructions through put.</p>
@@ -182,159 +186,9 @@ This helps prevent malware attacks (like buffer overflow attacks) by blocking ma
 					<li>Stops harmful code from running.</li>
 					<li>Increases system protection without slowing down performance.</li>
 				</ul>
-			</div>
-			<div class="project-card-L project-large">
+			
 				
 				
-				<h2>Selecting a CPU</h2>
-				<h3>Questions:</h3>
-				<ul>
-					<li>Does the motherboard support Intel CPUs or AMD CPUs?</li>
-					<li>What CPU socket does the motherboard have?</li>				
-				</ul>
-				<h3>Answer:</h3>
-				<p>Read the motherboard book or manual and the manufacturer's Website</p>
-				<table>
-				  <tr>
-					<th>CPU Model:</th>
-					<th>Socket:</th>
-					<th>Platform (Chipset/Series):</th>
-				  </tr>
-				  <tr>
-					<td>Intel Core i3/i5/i7/i9 (12th, 13th, 14th Gen)</td>
-					<td>LGA 1700</td>
-					<td>Intel 600/700 Series</td>
-				  </tr>
-				  <tr>
-					<td>Intel Core i3/i5/i7/i9 (10th,11th)</td>
-					<td>LGA 1200</td>
-					<td>Intel 400/500 Series</td>
-				  </tr>
-				  <tr>
-					<td>AMD Ryzen 3/5/7/9 7000 Series (Zen 4)</td>
-					<td>AM 5</td>
-					<td>AMD 600 Series</td>
-				  </tr>
-				  <tr>
-					<td>AMD Ryzen 3/5/7/9 5000 Series (Zen 3)</td>
-					<td>AM 4</td>
-					<td>AMD 400/500 Series</td>
-				  </tr>
-				  <tr>
-					<td>Intel Xeon (Workstation / Server)</td>
-					<td>LGA 4189/ LGA 4677</td>
-					<td>Intel Server Platforms </td>
-				  </tr>
-				  <tr>
-					<td>AMD EPYC (Server CPUs)</td>
-					<td>SP3</td>
-					<td>AMD Server Platforms</td>
-				  </tr>
-				  <tr>
-					<td>Apple M1/M2/M3 chips (MAC)</td>
-					<td>Integrated (Non - socketed)</td>
-					<td>Apple Silicon Platform</td>
-				  </tr>
-				</table>
-				<h4>Deciphering Processor Numbers:</h4>
-				<table>
-				  <tr>
-					<th>Brand</th>
-					<th>Brand Modifier</th>
-					<th>Gen.</th>
-					<th>SKU Numbers</th>
-					<th>Alpha suffix</th>
-				  </tr>
-				  <tr>
-					<td>Intel Core</td>
-					<td>i7</td>
-					<td>7</td>
-					<td>500</td>
-					<td>U</td>
-				  </tr>			
-				  <tr>
-					<td>Intel Core i7 7500 U <i>"U" indicates that it's a desktop processor using Ultra-Low power</i></td>
-				 </tr>		  
-				</table>
-				<table>
-				  <tr>
-					<th>Brand</th>
-					<th>Market segment/power</th>
-					<th>Gen.</th>
-					<th>Performance level</th>
-					<th>Mod. Num.</th>
-					<th>Power suffix</th>
-				  </tr>
-				  <tr>
-					<td>AMD Ryzen</td>
-					<td>7</td>
-					<td>5</td>
-					<td>8</td>
-					<td>00</td>
-					<td>X</td>
-				  </tr>			
-				  <tr>
-					<td>AMD Ryzen 7 5800X <i>"X" indicates high-performance</i></td>
-				 </tr>		  
-				</table>
-				
-				<p><b>Link:</b> <a href="https://ark.intel.com">https://ark.intel.com</a>
-				<a href="https://www.amd.com/en/products/processors-desktop">https://www.amd.com/en/products/processors-desktop</a>
-				<a href="https://www.amd.com/en/products/processors-laptop">https://www.amd.com/en/products/processors-laptop</a></p>
-				<h3>When installing a CPU</h3>
-				<ul>
-					<li> Not bend any of the tiny pins on the CPU or the socket.</li>
-					<li>The power supply can supply enough electricity for the CPU.</li>
-					<li>Provide adeguate cooling.</li>				
-				</ul>
-				<h3>CPU Socket types:</h3>
-				<ul><li>Intel CPUs uses a Land Grid Array (LGA) package for socketed CPUs, where the underside of the CPU has hundred of contact points that line up with the socket pins.</li>
-					<li>AMD CPUs have the pins; the sockets have holes. The pins on the AMD Pin Grid Array (PGA) CPUs allign with the holes in the sockets.</li>
-					<li>These sockets are generically called zero insertion force (ZIF) sockets.</li>
-				</ul>	
-				<h3>Cooling</h3>
-				<ul>
-						<li> CPUs consume wattage or watts</li>
-						<li> CPUs don’t tolerate heat well</li>
-						<li> CPU usesa a combination of a heat sink and fan.</li>
-						<li> A heat sink is a copper or other metal device designed to dissipate heat from whatever it touches.</li>
-						<li> A heatsink by itself (no fan) on a chip provides passive cooling.</li>
-						<li> A heatsink and fan combination provides active cooling.</li>
-						<li> <i>OEM CPU coolers:</i> original equipment manufacturer (OEM) heat-sink and fan assemblies are included with most Intel  and AMD retail-boxed CPUs. - PRO: you know absolutely they will work with your CPU.</li>
-						<li> <i>Spezialized CPU coolers:</i> many companies sell third-party heat-sink and fan assemblies for a variety of CPUs.</li>
-						<li> <i>Liquid cooling:</i> works by running some liquid (usually water). Any liquid-cooling system consists of three main parts:</li>
-							<ul><li>a hollow metal block that sits on the CPU</li>
-								<li>a pump to move the liquid around</li>
-								<li>some device to cool the liquid</li>
-							</ul>        
-						<li> before inserting the heat sink, add a small amount of thermal paste ( also called: thermal compound, heat dope, nasty silver goo).</li>
-						<li> secure heat sink and plug the fan power connectore into the motherboard standout.</li>
-				</ul>		
-    			<h3>Overclocking</h3> <p>running a CPU or GPU faster than its official speed to boost performance.</p>
-				<h4>CMOS clear or CLRTC:</h4>
-				<p> most motherboards have a jumper setting or a button that makes the CMOS go back to default setting.</p>
-				<h2>Troubleshooting CPUs</h2>
-				<ol>
-					<li> Overheating</li>
-					<li> Catastrophic failures</li>				
-				</ol>
-				<h3>Symptoms of Overheating:</h3>
-				<ul>
-					<li> too much thermal paste</li>
-					<li> not enough thermal paste or thermal paste spread unevenly</li>
-					<li> failure to connect the fan power</li>
-				</ul>
-    
-				<p>If CPU doesn’t have adequate ventilation = this will result in sluggish performance ( the CPU slow down to minimize heat), intermittent shutdowns ( when the CPU hits a certain thermal level) or spontaneously rebooting.</p>
-
-				<h3>Catastrophic Failures:</h3>
-				<p>The PC will suddenly get a blue screen of death ( BsoD), what’s technically called a Windows Stop Error.</p>
-				<p><b>--						OR						--</b></p>
-				<p>The entire computer will simply STOP and the screen will go black, perhaps accomanied by a loud pop.</p>
-				<ul>
-					<li> The acrid smell of burnt electronics</li>
-					<li> trails of smoke coming out of the case</li>
-				</ul>  	
 			</div>
 			
 		</div>
