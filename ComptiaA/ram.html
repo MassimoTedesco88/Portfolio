@@ -45,191 +45,231 @@
 			<a href="operationalProcedures.html">Operational Procedures</a>					
 	</div>
 	<h2 class="titolo-argomento">[ RAM ]</h2>
-	<h2 class="sottotitolo-argomento">~ Central Process Unit ~</h2>
+	<h2 class="sottotitolo-argomento">~ Random Access Memory ~</h2>
 	<section class="section projects">
 		
 		<div class="project-grid">
 			<div class="project-card-L project-large">
-				RAM ( Random Access Memory)
-Types of RAM
-Type	Full form	Where it’s used	Key features
-SRAM 	Static RAM	CPU cache (L1,L2,L3)	Very fast, expensive, small
-DRAM	Dynamic RAM	Mainsystem memory	Slower than SRAM, need refreshing
-SDRAM	Synchronous DRAM	Old Computers (~1990s)	Synced (synchronized) with CPU clock 
-DDR SDRAM	Double Data Rate SDRAM	Modern PCs	Transfers data on both clock edges
-DDR2/DDR3/DDR4/DDR5	Faster versions of DDR	Modern desktops, laptops, servers	Increasing speed and efficiency over generations
-VRAM	Video RAM	Graphics cards (GPU)	Specialized for image data
-LPDDR	Low-power DDR	Smartphones, tablets	Battery-efficient RAM
-ECC RAM	Error- correcting code ram	Servers, workstations	Can detect and correct memory errors
+				<h2>Types of RAM</h2>
+				<table>
+					<tr><th>Type</th><th>	Full form</th><th>	Where it’s used</th><th>	Key features</th></tr>
+					<tr><td>SRAM</td><td> 	Static RAM</td><td>	CPU cache (L1,L2,L3)</td><td>	Very fast, expensive, small</td></tr>
+					<tr><td>DRAM</td><td>	Dynamic RAM</td><td>	Mainsystem memory</td><td>	Slower than SRAM, need refreshing</td></tr>
+					<tr><td>SDRAM</td><td>	Synchronous DRAM</td><td>	Old Computers (~1990s)</td><td>	Synced (synchronized) with CPU clock</td> </tr>
+					<tr><td>DDR SDRAM</td><td>	Double Data Rate SDRAM</td><td>	Modern PCs</td><td>	Transfers data on both clock edges</td></tr>
+					<tr><td>DDR2/DDR3/DDR4/DDR5</td><td>Faster versions of DDR</td><td>	Modern desktops, laptops, servers</td><td>	Increasing speed and efficiency over generations</td></tr>
+					<tr><td>VRAM</td><td>	Video RAM</td><td>	Graphics cards (GPU)</td><td>	Specialized for image data</td></tr>
+					<tr><td>LPDDR</td><td>	Low-power DDR</td><td>	Smartphones, tablets</td><td>	Battery-efficient RAM</td></tr>
+					<tr><td>ECC RAM</td><td>	Error- correcting code ram</td><td>	Servers, workstations</td><td>	Can detect and correct memory errors</td></tr>
+				</table>
+				<h2>Common RAM Modules</h2>
+				<table>
+					<tr><th>Module Type</th><th>	Full name</th><th>	Where Used</th><th>	Key Features</th></tr>
+					<tr><td>DIMM</td><td>	Dual Inline Memory Module</td><td>	Desktops, Servers</td><td>	Full-size RAM, 168-288pins</td></tr>
+					<tr><td>SO-DIMM</td><td>	Small Outline DIMM</td><td>	Laptops, Small PCs</td><td>	Half-size of DIMM, 72-260pins</td></tr>
+					<tr><td>RDIMM</td><td>	Registered DIMM</td><td>	Servers</td><td>	With register between DRAM and memory controller for stability</td></tr>
+					<tr><td>LRDIMM</td><td>	Load-Registered DIMM</td><td>	High-end servers</td><td>	Lower electrical load, higher capacity</td></tr>
+					<tr><td>UDIMM</td><td>	Unbuffered DIMM</td><td>	Desktops, some servers</td><td>	Regular, unbuffered RAM (no register)</td></tr>
+					<tr><td>Micro DIMM</td><td>	Micro Dual Inline Memory Module</td><td>	Ultra-small laptops</td><td>	Even smaller than SO-DIMM</td></tr>
+				</table>
+				<ul><li>A desktop usually has DIMMs.</li>
+					<li>A laptop uses SO-DIMMs.</li>
+					<li>A server can use RDIMMs or LRDIMMs.</li>
+				</ul>
+				<h2>Number of Pins of DDR RAM</h2>
+				<table>
+					<tr><th>DDR Version</th>	<th>DIMM (Desktop)</th>	<th>SO-DIMM(Laptop)</th></tr>
+					<tr><td>DDR1</td><td>	184 pins</td><td>	200 pins</td></tr>
+					<tr><td>DDR2</td><td>	240 pins</td><td>	200 pins</td></tr>
+					<tr><td>DDR3</td><td>	240 pins</td><td>	204 pins</td></tr>
+					<tr><td>DDR4</td><td>	288 pins</td><td>	260 pins</td></tr>
+					<tr><td>DDR5</td><td>	288 pins</td><td>	262 pins</td></tr>
+				</table>
+				<h2>Types of Memory Channel Architecture</h2>
+				<table>
+					<tr><th>Architecture</th><th>	Number of slots</th><th>	How to populate	Where it’s used</th></tr>
+					<tr><td>Single Channel</td><td>	1,2,4</td><td>	Insert 1 RAM stick in any slot	Entry-level PCs, old laptops</td></tr>
+					<tr><td>Dual Channel</td><td>	2 or 4</td><td>	Insert 2 RAM sticks in paired slots (e.g. A1+B1)	Most modern desktops and laptops</td></tr>
+					<tr><td>Triple Channel</td><td>	3 or 6</td><td>	Insert 3 RAM sticks in specific slots	Old high-end Intel x58 platforms</td></tr>
+					<tr><td>Quad Channel</td><td>	4 or 8</td><td>	Insert 4 RAM sticks in correct pairs (e.g. A1+B1+A2+B2)	Workstations, HEDT (High-End Desktop) CPUs like Threadripper, Xeon</td></tr>
+				</table>
+				<p>Important summary:</p>
+				<ul>
+					<li> Number of slots available ≠ number of channels ( you might have 4 slots, but still only support dual channel)</li>
+					<li> To enable multi-channel ( Dual-Triple-Quad):</li><ul>
+						<li> you must insert RAM sticks properly according to the motherboard manual.</li>
+						<li> Often, slots are color-coded to help you.</li></ul>
+					<li> Mixing different RAM sizes or models can cause memory to run in single channel or asymmetric mode, lowering performance.</li>
+					<li> More channel = more memory bandwidth</li>
+				</ul>
 
-Common RAM Modules
-Module Type	Full name	Where Used	Key Features
-DIMM	Dual Inline Memory Module	Desktops, Servers	Full-size RAM, 168-288pins
-SO-DIMM	Small Outline DIMM	Laptops, Small PCs	Half-size of DIMM, 72-260pins
-RDIMM	Registered DIMM	Servers	With register between DRAM and memory controller for stability
-LRDIMM	Load-Registered DIMM	High-end servers	Lower electrical load, higher capacity
-UDIMM	Unbuffered DIMM	Desktops, some servers	Regular, unbuffered RAM (no register)
-Micro DIMM	Micro Dual Inline Memory Module	Ultra-small laptops	Even smaller than SO-DIMM
-A desktop usually has DIMMs.
-A laptop uses SO-DIMMs.
-A server can use RDIMMs or LRDIMMs.
-
-Number of Pins of DDR RAM
-DDR Version	DIMM (Desktop)	SO-DIMM(Laptop)
-DDR1	184 pins	200 pins
-DDR2	240 pins	200 pins
-DDR3	240 pins	204 pins
-DDR4	288 pins	260 pins
-DDR5	288 pins	262 pins
-Types of Memory Channel Architecture
-Architecture	Number of slots	How to populate	Where it’s used
-Single Channel	1,2,4	Insert 1 RAM stick in any slot	Entry-level PCs, old laptops
-Dual Channel	2 or 4	Insert 2 RAM sticks in paired slots (e.g. A1+B1)	Most modern desktops and laptops
-Triple Channel	3 or 6	Insert 3 RAM sticks in specific slots	Old high-end Intel x58 platforms
-Quad Channel	4 or 8	Insert 4 RAM sticks in correct pairs (e.g. A1+B1+A2+B2)	Workstations, HEDT (High-End Desktop) CPUs like Threadripper, Xeon
-Important summary:
-    • Number of slots available ≠ number of channels ( you might have 4 slots, but still only support dual channel)
-    • To enable multi-channel ( Dual-Triple-Quad):
-        ◦ you must insert RAM sticks properly according to the motherboard manual.
-        ◦ Often, slots are color-coded to help you.
-    • Mixing different RAM sizes or models can cause memory to run in single channel or asymmetric mode, lowering performance.
-    • More channel = more memory bandwidth
-
-DDR3/DDR4/DDR5 Speed Comparison Table
-Key terms:
-Core RAM Clock: Real clock speed of the memory chip.
-I/O Bus Clock (MT/s): Mega transfers per second – shows how fast data is transferred.
-PC Speed Rating: Label used on RAM modules.
-Bandwidth: Maximum data transfer rate per memory channel ( in ideal conditions).
-Important Notes about DDR3/DDR4/DDR5 RAM
-    • MT/s ≠ Mhz : DDR memory transfers two data bits per clock cycle.
-        ◦ Therefore:
-            ▪ 1600 Mhz I/O = 800 Mhz real core clock
-            ▪ MT/s = mega transfer per second
-    • How I/O speeds relate to clock speeds:
-        ◦ DDR2: I/O speed = 2x the internal clock
-        ◦ DDR3/DDR4/DDR5=
-            ▪ I/O speed = 4x the internal clock.
-            ▪ Use techniques like 8-bit prefetch, making I/O speed effectively 4x the clock
-    • PC Speed Rating = MT/s x 8 : this number represents the theorical maximum bandwidth in MB/s
-        ◦ example: DDR3-1600 = 1600 x 8 = PC3-12800
-    • Compatibility:
-        ◦ DDR3,DDR4,DDR5 are not physucally or electrically compatible
-        ◦ Each generation uses a different number of pins and different NOTCH position
-    • Channel and total bandwidth
-        ◦ bandwidth refers to single-channel
-        ◦ with dual-channel, bandwidth doubles
-    • Different Voltage requirements:
-RAM Type	Typical voltage
-DDR3	1.5V (low-voltage:1.35V or 1.25V)
-DDR4	1.2V
-DDR5	1.1V (with onboard power management)
-    • DDR5: Integrated PMIC
-        ◦ DDR5 includes a Power Management IC (PMIC) built directly into the memory module, instead of relying on the motherboard. This improves stability but increases complexity and cost
-    • Real-Word speeds ≠ Theoretical speeds
-        ◦ real performance also depends on:
-            ▪ latency (CL)
-            ▪ CPU memory controller
-            ▪ system architecture
-
-DDR3 Speeds
-Core RAM Clock Speed	DDR I/O Speed	DDR3 Speed Rating	PC Speed Rating
-100 MHz	400 MHz	DDR3-800	PC3-6400
-133 MHz	533 MHz	DDR3-1066	PC3-8500
-166MHz	667 MHz	DDR3-1333	PC3-10667
-…...			
-300 MHz	1200 MHz	DDR3-2400	PC3-19200
- DDR4 Speeds
-Clock Speed	Bandwidth	DDR4 Speed Rating	PC Speed Rating
-200 MHz	1600 MT/s	DDR4-1600	PC4-12800
-266 MHz	2133 MT/s	DDR4-2133	PC4-17000
-300 MHz	2400 MT/s	DDR4-2400	PC4-19200
-…..			
-588 MHz	4700 MT/s	DDR4-4700	PC4-37600
-DDR5 Speeds
-Clock Speed	Bandwidth	DDR4 Speed Rating	PC Speed Rating
-300 MHz	4800 MT/s	DDR5-4800	PC5-38400
-325 MHz	5200 MT/s	DDR5-5200	PC5-41600
-…..			
-425 MHz	6800 MT/s	DDR5-6800	PC5-54400
-450 MHz	7200 MT/s	DDR5-7200	PC5-57600
-
-RAM variations:
-    • Double-Sided DIMM: these RAM sticks have memory chips on both sides of the module. They may be treated by the system as two ranks, which can affect compatibility and performance.
-    • Latency (CAS Latency – CL): Latency is the delay between a memory request and the response. Lower CL = faster response time
-    • Registered and Buffered memory:
-        ◦ Registered (RDIMM): has a register between the memory controller and the DRAM chips. It improves stability for servers and workstations.
-        ◦ Buffered: a general term, often the same as registered.
-        ◦ Unbuffered (UDIMM): regular RAM used in desktops/laptops. It’s faster but less stable for large memory configurations.
-Do you need more RAM?
-Two symptoms point:
-    • general system sluggishness and excessive hard drive accessing.
-Virtual Memory: is a section of a computer’s storage (usually the hard drive or SSD) that acts like extra RAM when the physical RAM is full.
-    • It prevents crashes when RAM runs out
-    • It’s much slower than real RAM
-    • Managed automatically by the operating system (e.g. Windows Page file, Linux Swap)
-Simple explanation of how virtual memory works:
-    1. RAM Get Full: when your system runs many programs or opens large files, the physical RAM fills up
-    2. OS creates a Page file ( or Swap space): the operating system uses a section of your hard drive or SSD as temporary memory – this is called: Page File (windows) and Swap Space (linux/macOs)
-    3. Less-Used Data is moved: the OS moves inactive data (like background apps or old tabs) from RAM to the virtualo memory on disk
-    4. RAM is freed up: now RAM has space for active tasks, like your current game or browser window
-    5. If needed, Data is swapped back: when that old data is needed again, it’s moved back from disk to RAM – but this takes time, making the system feel slower
-System RAM recommendation:
-32 bit Windows (8/8.1/10)	2 GB to get by	4 GB for best result
-64 bit Windows(8/8.1/10/11)	8 GB to get by	16 GB for a solid machine;
-32 GB for any machine doing serious, processor-intensive work.
-
-Determining current RAM capacity
-(System Control Panel applet or windows-pause/break) 
-(Task manager by pressing CTRL-SHIFT-ESC )
-
-Getting the right RAM
-    1. Open the case to see how many sticks of RAM you have installed currently and how many free slots you have open
-    2. Check the motherboard book or RAM manufacturer’s website to determine the total capacity of RAM the system can handle and what specific technology works with your system
-    3. Find oyt what DDR generation (DDR3, DDR4, DDR5) they support
-or 
-use the freeware CPU-Z program.
-
-Mixing
-    • All motherboards can handle different capacities if RAM. (If you have three slots, you may put a 4GB stick in one and an 8 GB stick in the other with a high chance of success)
-    • to ensure maximum stability in a system: Choose RAM sticks that match in technology, capacity, speed and latency (CL)
-    • The safest, easiest rule to follow is to use the speed of DRAM specified in the motherboard book and make sure that every piece of DRAM runs at that speed.
-
-Installing DIMMs / SoDIMMs
-    1. attach an antistatic wrist strap ( to avoid ESD)
-    2. on a laptop, turn the system off, disconnect it from the AC wall socket and remove all batteries
-    3. if you are working on a laptop with a build-in battery, consult the service manual and look for a “service mode” procedure >>> this mode will cut off power from the installed battery, making the laptop safe to work on
-Troubleshooting RAM
-Common RAM issues symptoms
-    • frequent crashes or blue screens (BSOD – Blue screen of death)
-    • PC won’t boot or reboot randomly
-    • beeping sounds during startup
-    • programs freeze or close unexpectedly
-    • wrong RAM amount shown in system info
-Steps to trobleshoot RAM
-    1. Check physical installation
-        ◦ power off PC, unplug it, and re-seat the RAM modules
-        ◦ clean the slots and contacts with compressed air
-        ◦ make sure they’re clicked in fully and in the right slots
-    2.  Use one stick at a time
-        ◦ remove all but one RAM stick and try booting
-        ◦ test each stick individually in each slot to find faulty ones
-        ◦ 
-    3. Run memory diagnostic tools
-        ◦ windows memory diagnostic: Type “MDSCHED” in start menu and restart to test
-        ◦ MemTest86: Boot from USB and scan memory throughly
-    4. Check BIOS Settings
-        ◦ reset BIOS/UEFI to default setting
-        ◦ update BIOS if newer versions improve memory compatibility
-    5. Check compatibility
-        ◦ ensure your RAM’s speed, size, and type are supported by the motherboard
-        ◦ mixing different RAM kits can sometimes cause instability
-
-    • if RAM is faulty:
-        ◦ replace the defective stick
-        ◦ if under warranty, contact the manufacturer for RMA (replacement)
+				<h2>DDR3/DDR4/DDR5 Speed Comparison Table</h2>
+				<h3>Key terms:</h3>
+				<ul>
+					<li><b>Core RAM Clock:</b> Real clock speed of the memory chip.</li>
+					<li><b>I/O Bus Clock (MT/s):</b> Mega transfers per second – shows how fast data is transferred.</li>
+					<li><b>PC Speed Rating:</b> Label used on RAM modules.</li>
+					<li><b>Bandwidth:</b> Maximum data transfer rate per memory channel ( in ideal conditions).</li>
+				</ul>
+				<h3>Important Notes about DDR3/DDR4/DDR5 RAM</h3>
+				<ul>
+					<li> MT/s ≠ Mhz : DDR memory transfers two data bits per clock cycle.</li>
+						<ul><li> Therefore:</li>
+							<ul><li> 1600 Mhz I/O = 800 Mhz real core clock</li>
+							<li> MT/s = mega transfer per second</li></ul></ul>
+					<li> How I/O speeds relate to clock speeds:</li>
+						<ul><li>DDR2: I/O speed = 2x the internal clock</li>
+						<li> DDR3/DDR4/DDR5=</li>
+							<ul><li> I/O speed = 4x the internal clock.</li>
+							<li> Use techniques like 8-bit prefetch, making I/O speed effectively 4x the clock</li></ul></ul>
+					<li> PC Speed Rating = MT/s x 8 : this number represents the theorical maximum bandwidth in MB/s</li>
+						<ul><li>example: DDR3-1600 = 1600 x 8 = PC3-12800</li></ul>
+					<li>Compatibility:</li>
+						<ul><li> DDR3,DDR4,DDR5 are not physucally or electrically compatible</li>
+						<li> Each generation uses a different number of pins and different NOTCH position</li></ul>
+					<li>Channel and total bandwidth</li>
+						<ul><li>bandwidth refers to single-channel</li>
+						<li>with dual-channel, bandwidth doubles</li></ul>
+					<li>Different Voltage requirements:</li>
+					<ul><table>
+						<tr><th>RAM Type</th><th>	Typical voltage</th></tr>
+						<tr><td>DDR3</td><td>	1.5V (low-voltage:1.35V or 1.25V)</td></tr>
+						<tr><td>DDR4</td><td>	1.2V</td></tr>
+						<tr><td>DDR5</td><td>	1.1V (with onboard power management)</td></tr>
+					</table></ul>
+					<li> DDR5: Integrated PMIC</li>
+						<ul><li>DDR5 includes a Power Management IC (PMIC) built directly into the memory module, instead of relying on the motherboard. This improves stability but increases complexity and cost</li></ul>
+					<li>Real-Word speeds ≠ Theoretical speeds</li>
+						<ul><li> real performance also depends on:</li></ul>
+							<ul><li> latency (CL)</li>
+							<li> CPU memory controller</li>
+										<li> system architecture</li></ul>
+							</ul>
+			<h3>DDR3 Speeds</h3>
+				<table>
+					<tr><th>Core RAM Clock Speed</th><th>	DDR I/O Speed</th>	<th>DDR3 Speed Rating</th>	<th>PC Speed Rating</tr>
+					<tr><td>100 MHz</td><td>	400 MHz</td><td>	DDR3-800</td><td>	PC3-6400</td></tr>
+					<tr><td>133 MHz</td><td>	533 MHz</td><td>	DDR3-1066</td><td>	PC3-8500</td></tr>
+					<tr><td>166MHz</td><td>	667 MHz</td><td>	DDR3-1333</td><td>	PC3-10667</td></tr>
+					<tr>…...			</td></tr>
+					<tr><td>300 MHz</td><td>	1200 MHz</td><td>	DDR3-2400</td><td>	PC3-19200</td></tr>
+				</table>
+			<h3>DDR4 Speeds</h3>
+				<table>
+					<tr><th>Clock Speed</th><th>	Bandwidth</th><th>	DDR4 Speed Rating</th><th>	PC Speed Rating</th></tr>
+					<tr><td>200 MHz</td>	<td>1600 MT/s</td>	<td>DDR4-1600</td>	<td>PC4-12800</td></tr>
+					<tr><td>266 MHz</td>	<td>2133 MT/s</td>	<td>DDR4-2133</td>	<td>PC4-17000</td></tr>
+					<tr><td>300 MHz</td>	<td>2400 MT/s</td>	<td>DDR4-2400</td>	<td>PC4-19200</td></tr>
+					<tr><td>…..			</td></tr>
+					<tr><td>588 MHz</td><td>4700 MT/s</td><td>	DDR4-4700</td><td>	PC4-37600</td></tr>
+				</table>
+				<h3>DDR5 Speeds</h3>
+					<table>
+						<tr><th>Clock Speed</th><th>	Bandwidth</th><th>	DDR4 Speed Rating</th><th>	PC Speed Rating</th></tr>
+<tr><td>300 MHz</td><td>	4800 MT/s</td><td>	DDR5-4800</td><td>	PC5-38400</td></tr>
+<tr><td>325 MHz</td><td>	5200 MT/s</td><td>	DDR5-5200</td><td>	PC5-41600</td></tr>
+<tr><td>…..			</td></tr>
+<tr><td>425 MHz</td><td>	6800 MT/s</td><td>	DDR5-6800</td><td>	PC5-54400</td></tr>
+<tr><td>450 MHz</td><td>	7200 MT/s</td><td>	DDR5-7200</td><td>	PC5-57600</td></tr>
+					</table>
+				<h3>RAM variations:</h3>
+				<ul>
+    <li><b> Double-Sided DIMM:</b> these RAM sticks have memory chips on both sides of the module. They may be treated by the system as two ranks, which can affect compatibility and performance.</li>
+    <li><b> Latency (CAS Latency – CL):</b> Latency is the delay between a memory request and the response. Lower CL = faster response time</li>
+    <li><b>Registered and Buffered memory:</b></li>
+		<ul>
+			<li> Registered (RDIMM): has a register between the memory controller and the DRAM chips. It improves stability for servers and workstations.</li>
+			<li> Buffered: a general term, often the same as registered.</li>
+			<li> Unbuffered (UDIMM): regular RAM used in desktops/laptops. It’s faster but less stable for large memory configurations.</li></ul>
+				</ul>
 			</div>
 			<div class="project-card-L project-large">
+				<h2>Do you need more RAM?</h2>
+				<p><i>Two symptoms point:</i> general system sluggishness and excessive hard drive accessing.</p>
+     
+			<h3>Virtual Memory:</h3><p> is a section of a computer’s storage (usually the hard drive or SSD) that acts like extra RAM when the physical RAM is full.</p>
+				<ul>
+					<li> It prevents crashes when RAM runs out</li>
+					<li> It’s much slower than real RAM</li>
+					<li> Managed automatically by the operating system (e.g. Windows Page file, Linux Swap)</li>
+				</ul>
+			<h3>Simple explanation of how virtual memory works:</h3>
+				<ol>
+					<li> RAM Get Full: when your system runs many programs or opens large files, the physical RAM fills up</li>
+					<li> OS creates a Page file ( or Swap space): the operating system uses a section of your hard drive or SSD as temporary memory – this is called: Page File (windows) and Swap Space (linux/macOs)</li>
+					<li> Less-Used Data is moved: the OS moves inactive data (like background apps or old tabs) from RAM to the virtualo memory on disk</li>
+					<li> RAM is freed up: now RAM has space for active tasks, like your current game or browser window</li>
+					<li> If needed, Data is swapped back: when that old data is needed again, it’s moved back from disk to RAM – but this takes time, making the system feel slower</li>
+				</ol>
+			<h3>System RAM recommendation:</h3>
+				<p><b>32 bit Windows (8/8.1/10)</b>	<i>2 GB to get by</i>	4 GB for best result</p>
+				<p><b>64 bit Windows(8/8.1/10/11)</b>	<i>8 GB to get by</i>	16 GB for a solid machine; <i>32 GB</i> for any machine doing serious, processor-intensive work.</p>
+
+			<h3>Determining current RAM capacity</h3>
+				<p><i>(System Control Panel applet or windows-pause/break) </i><br>
+				<i>(Task manager by pressing CTRL-SHIFT-ESC )</i></p>
+
+			<h3>Getting the right RAM</h3>
+				<ol>
+					<li> Open the case to see how many sticks of RAM you have installed currently and how many free slots you have open</li>
+					<li> Check the motherboard book or RAM manufacturer’s website to determine the total capacity of RAM the system can handle and what specific technology works with your system</li>
+					<li> Find oyt what DDR generation (DDR3, DDR4, DDR5) they support</li>
+				</ol>
+				<p><b> -- or  -- </b> </p>
+				<p>use the freeware CPU-Z program.</p>
+				
+
+			<h3>Mixing</h3>
+				<ul>
+					<li> All motherboards can handle different capacities if RAM. (If you have three slots, you may put a 4GB stick in one and an 8 GB stick in the other with a high chance of success)</li>
+					<li> to ensure maximum stability in a system: Choose RAM sticks that match in technology, capacity, speed and latency (CL)</li>
+					<li> The safest, easiest rule to follow is to use the speed of DRAM specified in the motherboard book and make sure that every piece of DRAM runs at that speed.</li>
+				</ul>
+			<h3>Installing DIMMs / SoDIMMs</h3>
+				<ol>
+					<li>attach an antistatic wrist strap ( to avoid ESD)</li>
+					<li> on a laptop, turn the system off, disconnect it from the AC wall socket and remove all batteries</li>
+					<li> if you are working on a laptop with a build-in battery, consult the service manual and look for a “service mode” procedure >>> this mode will cut off power from the installed battery, making the laptop safe to work on</li>
+				</ol>
+			<h2>Troubleshooting RAM</h2>
+			<h3>Common RAM issues symptoms</h3>
+				<ul>
+					<li> frequent crashes or blue screens (BSOD – Blue screen of death)</li>
+					<li> PC won’t boot or reboot randomly</li>
+					<li> beeping sounds during startup</li>
+					<li> programs freeze or close unexpectedly</li>
+					<li> wrong RAM amount shown in system info</li>
+				</ul>
+			<h3>Steps to trobleshoot RAM</h3>
+			<ol>
+				<li> Check physical installation</li>
+					<ul>
+						<li> power off PC, unplug it, and re-seat the RAM modules</li>
+						<li> clean the slots and contacts with compressed air</li>
+						<li> make sure they’re clicked in fully and in the right slots</li></ul>
+				<li>  Use one stick at a time</li>
+					<ul>
+						<li> remove all but one RAM stick and try booting</li>
+						<li> test each stick individually in each slot to find faulty ones</li></ul>
+						
+				<li> Run memory diagnostic tools</li>
+					<ul>
+						<li> windows memory diagnostic: Type “MDSCHED” in start menu and restart to test</li>
+						<li> MemTest86: Boot from USB and scan memory throughly</li></ul>
+				<li> Check BIOS Settings</li>
+					<ul>
+						<li> reset BIOS/UEFI to default setting</li>
+						<li> update BIOS if newer versions improve memory compatibility</li></ul>
+				<li> Check compatibility</li>
+					<ul>
+						<li> ensure your RAM’s speed, size, and type are supported by the motherboard</li>
+						<li> mixing different RAM kits can sometimes cause instability</li></ul>
+			</ol>
+        
+			<p>if RAM is faulty:</p>
+			<ul>
+				<li> replace the defective stick</li>
+				<li> if under warranty, contact the manufacturer for RMA (replacement)</li></ul> 
 				
 				
 				
