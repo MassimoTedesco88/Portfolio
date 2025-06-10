@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Automated Stock Analysis Tool</title>
+		<link rel="stylesheet" href="../CSS/stylesPortfolio.css">
+	</head>
+<body>
+	<header>
+		<div class="logo">PC & Network - My Portfolio</div>
+		<nav class="nav">
+			<a href="#">myGitHub</a>
+			<a href="https://de.linkedin.com/in/massimo-sedda-173416135?trk=people-guest_people_search-card">myLinkedIn</a>
+		</nav>
+	</header>
+	<section class="section intro">
+		<h1>Automated Stock Analysis Tool</h1>
+		
+					<p><i>Personal Project | Feb 2025 – Apr 2025 (Evenings & Weekends)</i></p>
+					<p><i>Python, Financial Modeling Prep API, HTML, CSV</i></p>		
+					
+					
+		<a href="..\indexPortfolio.html">**Torna Indietro**</a>
+	</section>	
+	<section class="section projects">
+		<div class="project-grid">
+			<div class="project-card-L project-large">
+				<p>I developed a Python-based stock analysus program that leverages the Financial Modeling Prep API to analyze up to 250 tickers per day (free API tier). </p>
+				<p>The tool performs the following key functions:</p>
+					<ul>
+						<li><b>Data Acquisition:</b> Automatically downloads historical prices and financial data for selected tickers.</li>
+						<li><b>Analysis & Indicators:</b>
+							<ul>
+								<li>Calculates technical, fundamental, and sentiment indicators.</li>
+								<li>Benchmarks each asset against global market conditions.</li>
+								<li>Detects the current market phase (e.g., accumulation, distribution).</li>
+								<li>Estimates investment horizon and automatically sets entry price, take profit, and stop loss levels.</li>
+								<li>Assesses risk and investment attractiveness.</li>
+								<li>Provides commentary in Italian on detected signals and suggests buying opportunities for short, medium, or long-term strategies.</li>
+							</ul>
+						</li>
+						<li><b>Reporting & Strategy:</b>
+							<ul>
+								<li>Generates interactive HTML reports and CSV files for each analysis.</li>
+								<li>Clickable links open detailed reports for each analyzed ticker.</li>
+								<li>Ranks and lists the top investment candidates using two custom strategies based on defined indicators and performance thresholds.</li>
+							</ul>
+						</li>
+					</ul>  
+					<br>
+					<p class="red"><b>This project was developed using Python with the support of AI tools such as ChatGPT to assist in coding. I focused on designing the system, defining its logic, and integrating the various components while learning through the development process.</b></p>
+					<p><b>Current Status & Future Plans:</b></p>
+					<p>The project is currently on hold as I focus on studying for the CompTIA A+ certification.</p>
+					<p>Planned future improvements include:</p>
+					<ul>
+						<li>Adding English-language signal outputs.</li>
+						<li>Implementing a new backtesting module featuring maximum drawdown, win rate, and loss rate calculations.</li>
+						<li>Developing a web platform that automatically publishes all HTML reports online.</li>
+						<li>Integrating a user login system, where only registered users can access the reports.</li>
+					</ul>	
+					<hr>
+					<h2>Example Reports</h2>
+					<ul>
+						<li><a href="example\GOOGL_report.html" target="_blank" rel="noopener noreferrer">Single Ticker Report - GOOGL</a><br>Detailed report of Google's financials and historical analysis.</li>
+						<li><a href="example\ElencoReport.html" target="_blank" rel="noopener noreferrer">All Tickers Report</a><br>Complete list of all analyzed tickers with associated metrics and scores.</li>
+						<li><a href="example\ElencoReportBestTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 1</a><br>Tickers selected when the macroeconomic phase is not in recession and medium-to-long term signals are positive.</li>
+						<li><a href="example\ElencoReportBUYSELLTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 2</a><br>Tickers filtered based on whether the company is in an accumulation phase or decline, using market cycle and financial indicators.</li>
+					</ul>
+					
+				
+				
+				
+				
+				
+						
+			</div>
+			<div class="project-card-L project-large">
+				
+				<a href="example\img1.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img1.png" alt="Main Ticker Folder"></a>
+				<p><i>This screenshot shows the main directory where the application automatically creates a subfolder for each stock ticker. Each subfolder contains downloaded data such as historical price data and financial statements in .csv format.</i></p>		
+				<hr>
+				<a href="example\img2.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img2.png" alt="Inside Ticker Folder"></a>
+				<p><i> This view displays the contents of a specific ticker's folder. It includes financial statement such as the income statement, cash flow statement, balance sheet, and historical pricing data. All files are structured and saved in .csv format for further analysis.</i></p>
+				<hr>
+				<a href="example\img4.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img4.png" alt="Reports Directory"></a>
+				<p><i>This image shows the repors directory containing detailed analysis reports for each ticker. It also includes summary files: one with all analyzed tickers and others filtered according to specific investment strategies.</i></p>
+				<hr>
+				<a href="example\img5.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img5.png" alt="Filtered Tickers CSV"></a>
+				<p><i> This screenshot highlights a .csv file listing all tickers that passed the filtering criteria based on the strategy rules. This file serves as a quick reference for potentially actionable investment opportunities.</i></p>
+    			   			
+    			
+    			
+						
+			</div>
+			<div class="project-card">
+				<h3>Key Features</h3>
+				<ul>
+				    <li>Automatic detection of devices on the local subnet</li>
+				    <li>Detailed listing of active TCP/UDP connections with local and remote IPs and ports</li>
+				    <li>Identification of services/processes associated with each connection</li>
+				    <li>Recognition of ephemeral (temporary) ports to distinguish client-side connections</li>
+   				    <li>Basic security insights to hel indentify unusual or suspicious network activity</li>
+				</ul>				
+			</div>
+			<div class="project-card">
+				<h3>What I learned from this project</h3>
+				<ul>
+				    <li>Network fundamentals</li>
+				    <li>System and process monitoring</li>
+				    <li>Understood the concept of ephemeral ports and how to distinguish them from well-known service ports.</li>
+				    <li>Security basics</li>
+				</ul>
+				
+			</div>	
+			<div class="project-card">
+				
+				<a href="#"><h3>This project is currently under development and not publicly available yet.</h3></a>			
+			</div>			
+		</div>		
+		
+	</section>
+		<footer>
+			&copy; PC & Network - My Portfolio 2025   |   Massimo Sedda
+		</footer>		
+	</body>
+</html>
