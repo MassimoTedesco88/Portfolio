@@ -18,17 +18,26 @@
 		<h1>Automated Stock Analysis Tool</h1>
 		
 					<p><i>Personal Project | Feb 2025 – Apr 2025 (Evenings & Weekends)</i></p>
-					<h2>Technologies used</h2>
-					<p><i>Python, Financial Modeling Prep API, HTML, CSV</i></p>		
-					<h2>Why I built it</h2>
-					<p>I wanted to deepen my understanding of financial markets while improving my programming skills by building a tool that automates investment analysis. The goal was to create something practical that could identify high-potential opportunities across different time horizons.</p>
+					<p>I developed a Python-based stock analysus program that leverages the Financial Modeling Prep API to analyze up to 250 tickers per day (free API tier). </p>
+					<p class="red"><b>This project was developed using Python with the support of AI tools such as ChatGPT to assist in coding. I focused on designing the system, defining its logic, and integrating the various components while learning through the development process.</b></p>
+					<p><b>Current Status & Future Plans:</b></p>
+					<p>The project is currently on hold as I focus on studying for the CompTIA A+ certification.</p>
+					<p><b>Planned future improvements include:</b></p>
+					
+						<p>Adding English-language signal outputs,</p>
+						<p>Implementing a new backtesting module featuring maximum drawdown, win rate, and loss rate calculations;</p>
+						<p>Developing a web platform that automatically publishes all HTML reports online;</p>
+						<p>Integrating a user login system, where only registered users can access the reports.</p>
+							
+						
+					
 					
 					<a href="..\indexPortfolio.html">**Torna Indietro**</a>
 		
 	</section>	
 	<section class="section projects">
 		<div class="project-grid">
-			<div class="project-card-L project-large">
+			<div class="project-card">
 				<h2>What it does</h2>		
 					<ul>
 						<li><b>Data Acquisition:</b> Automatically downloads historical prices and financial data for selected tickers.</li>
@@ -49,50 +58,58 @@
 								<li>Ranks and lists the top investment candidates using two custom strategies based on defined indicators and performance thresholds.</li>
 							</ul>
 						</li>
-					</ul>  
-					<h2>What I learned</h2>
-					<p>Through this project, I improved my skills in data automation, financial analysis, and report generation. I learned how to implement and combine different types of market indicators, manage and structure large amounts of data, and create a system for tracking and comparing investment opportunities.</p>
-					<hr>
-					<h2>Example Reports</h2>
-					<ul>
-						<li><a href="example\GOOGL_report.html" target="_blank" rel="noopener noreferrer">Single Ticker Report - GOOGL</a><br>Detailed report of Google's financials and historical analysis.</li>
-						<li><a href="example\ElencoReport.html" target="_blank" rel="noopener noreferrer">All Tickers Report</a><br>Complete list of all analyzed tickers with associated metrics and scores.</li>
-						<li><a href="example\ElencoReportBestTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 1</a><br>Tickers selected when the macroeconomic phase is not in recession and medium-to-long term signals are positive.</li>
-						<li><a href="example\ElencoReportBUYSELLTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 2</a><br>Tickers filtered based on whether the company is in an accumulation phase or decline, using market cycle and financial indicators.</li>
 					</ul>
-					
-				
-				
-				
-				
-				
+					</div>  
+						<div class="project-card">
+							<h2>What I learned</h2>
+							<p>Through this project, I improved my skills in data automation, financial analysis, and report generation. I learned how to implement and combine different types of market indicators, manage and structure large amounts of data, and create a system for tracking and comparing investment opportunities.</p>
+							<br>
+							<hr>
+							<h2>Technologies used</h2>
+							<p><i>Python, Financial Modeling Prep API, HTML, CSV</i></p>	
+						</div>
+					</div>
+					<div class="project-grid">
+						<div class="project-card">
+							<h2>Why I built it</h2>
+							<p>I wanted to deepen my understanding of financial markets while improving my programming skills by building a tool that automates investment analysis. The goal was to create something practical that could identify high-potential opportunities across different time horizons.</p>
+							
+						</div>
+						<div class="project-card">
+							<h2>Example Reports</h2>
+							<ul>
+								<li><a href="example\GOOGL_report.html" target="_blank" rel="noopener noreferrer">Single Ticker Report - GOOGL</a><br>Detailed report of Google's financials and historical analysis.</li>
+								<li><a href="example\ElencoReport.html" target="_blank" rel="noopener noreferrer">All Tickers Report</a><br>Complete list of all analyzed tickers with associated metrics and scores.</li>
+								<li><a href="example\ElencoReportBestTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 1</a><br>Tickers selected when the macroeconomic phase is not in recession and medium-to-long term signals are positive.</li>
+								<li><a href="example\ElencoReportBUYSELLTrade.html" target="_blank" rel="noopener noreferrer">Filtered Report - Strategy 2</a><br>Tickers filtered based on whether the company is in an accumulation phase or decline, using market cycle and financial indicators.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="project-grid">		
+						<div class="project-card">
+							
+							<a href="example\img1.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img1.png" alt="Main Ticker Folder"></a>
+							<p><i>This screenshot shows the main directory where the application automatically creates a subfolder for each stock ticker. Each subfolder contains downloaded data such as historical price data and financial statements in .csv format.</i></p>		
+						</div>
+						<div class="project-card">	
 						
-			</div>
-			<div class="project-card-L project-large">
-				
-				<a href="example\img1.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img1.png" alt="Main Ticker Folder"></a>
-				<p><i>This screenshot shows the main directory where the application automatically creates a subfolder for each stock ticker. Each subfolder contains downloaded data such as historical price data and financial statements in .csv format.</i></p>		
-				<hr>
-				<a href="example\img2.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img2.png" alt="Inside Ticker Folder"></a>
-				<p><i> This view displays the contents of a specific ticker's folder. It includes financial statement such as the income statement, cash flow statement, balance sheet, and historical pricing data. All files are structured and saved in .csv format for further analysis.</i></p>
-				<hr>
-				<a href="example\img4.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img4.png" alt="Reports Directory"></a>
-				<p><i>This image shows the repors directory containing detailed analysis reports for each ticker. It also includes summary files: one with all analyzed tickers and others filtered according to specific investment strategies.</i></p>
-				<hr>
-				<a href="example\img5.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img5.png" alt="Filtered Tickers CSV"></a>
-				<p><i> This screenshot highlights a .csv file listing all tickers that passed the filtering criteria based on the strategy rules. This file serves as a quick reference for potentially actionable investment opportunities.</i></p>
-    			   			
-    			
-    			
-						
-			</div>
+							<a href="example\img2.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img2.png" alt="Inside Ticker Folder"></a>
+							<p><i> This view displays the contents of a specific ticker's folder. It includes financial statement such as the income statement, cash flow statement, balance sheet, and historical pricing data. All files are structured and saved in .csv format for further analysis.</i></p>
+						</div>
+						</div><div class="project-grid">
+						<div class="project-card">
+							<a href="example\img4.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img4.png" alt="Reports Directory"></a>
+							<p><i>This image shows the repors directory containing detailed analysis reports for each ticker. It also includes summary files: one with all analyzed tickers and others filtered according to specific investment strategies.</i></p>
+						</div>
+						<div class="project-card">	
+							<a href="example\img5.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img5.png" alt="Filtered Tickers CSV"></a>
+							<p><i> This screenshot highlights a .csv file listing all tickers that passed the filtering criteria based on the strategy rules. This file serves as a quick reference for potentially actionable investment opportunities.</i></p>
+						</div>   
+					</div>
 			
 			
-			<div class="project-card">
-				
-				<a href="#"><h3>This project is currently under development and not publicly available yet.</h3></a>			
-			</div>			
-		</div>		
+			
+			
 		
 	</section>
 		<footer>

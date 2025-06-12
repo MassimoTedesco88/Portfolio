@@ -18,15 +18,13 @@
 		<h1>Suspicious Port & Malware Process Scanner</h1>
 		<p>NetSentinel is a Python-based security tool that monitors active network connections on a Linux system and detects potentially malicious processes based on their behavior and knows malware fingerprints. Given a list of suspicious ports, it scans all current TCP/UDP connections using the ss command, identifies associated processes, and analyzes their binary executable. It computes the SHA256 hash of each process and checks it against a known database of malicious hashes.</p>
 		<p><b>Note: The code in this project was written with the help of ChatGPT.</b></p>	
-		<h2>Technologies used</h2>
-		<p><i>Python, psutil, subprocess, ss</i></p>
-		<h2>Why I built it</h2>
-		<p>I wanted to explore network security and low-level system monitoring by creating a tool that helps detect suspicious or malicious processes through automated scanning and hash-based verification. It was also an opportunity to improve my skills in system-level scripting and threat detection.</p>
+		
+		
 		<a href="..\indexPortfolio.html">**Torna Indietro**</a>
 	</section>	
 	<section class="section projects">
 		<div class="project-grid">
-			<div class="project-card-L project-large">
+			<div class="project-card">
 				<h2>What it does</h2>
 				<ul>
 				    <li>Scans system connections via ss -tunap</li>
@@ -35,17 +33,31 @@
 				    <li>Displays process owner, command path, and hash status</li>
 				</ul>	
 			</div>
-			<div class="project-card-L project-large">
+			<div class="project-card">
+				<a href="example\img-sent.png" target="_blank" rel="noopener noreferrer"><img class="screenshot" src="example\img-sent.png" alt="screenshot-output"></a>
+				<a href="https://github.com/MassimoTedesco88/NetSentinel.git"><h3>View the full project on GitHub</h3></a>			
+			</div>		
+			
+					
+		</div>		
+		<div class="project-grid">		
+			<div class="project-card">
+				<h2>Why I built it</h2>
+				<p>I wanted to explore network security and low-level system monitoring by creating a tool that helps detect suspicious or malicious processes through automated scanning and hash-based verification. It was also an opportunity to improve my skills in system-level scripting and threat detection.</p>    			
+						
+			</div>			
+			<div class="project-card">
     			<h2>What I learned</h2>
     			<p>This project helped me understand how to interact with the operating system to extract low-level network and process data. I gained experience with secure hashing techniques, process-to-connection mapping, and integrating threat intelligence sources into security tools.</p>
 						
 			</div>
 			
 			<div class="project-card">
-				
-				<a href="https://github.com/MassimoTedesco88/NetSentinel.git"><h3>View the full project on GitHub</h3></a>			
+				<h2>Technologies used</h2>
+				<p><i>Python, psutil, subprocess, ss</i></p>		
 			</div>			
-		</div>		
+		</div>	
+		
 		
 	</section>
 		<footer>
